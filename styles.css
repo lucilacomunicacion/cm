@@ -3002,3 +3002,37 @@ border: 1px solid var(--sage);
   flex-wrap: wrap;
   gap: 0.75rem;
 }
+/* Nueva jerarquía visual del inicio */
+
+.hero-title {
+  color: var(--forest);
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.hero-intro {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.hero-intro h2 {
+  color: var(--forest);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.hero-intro p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.hero-copy .lead-strong {
+  margin-top: 0;
+  text-align: left;
+  line-height: 1.7;
+}
