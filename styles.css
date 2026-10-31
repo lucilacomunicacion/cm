@@ -3155,15 +3155,7 @@ border: 1px solid var(--sage);
    ========================================= */
 
 @media (max-width: 760px) {
-  #inicio.hero {
-    padding: 3rem 0;
-  }
-
-  #inicio .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-
+  /* Alineamos los contenedores de texto al centro de la pantalla */
   #inicio .hero-copy {
     align-items: center;
     text-align: center;
@@ -3171,14 +3163,26 @@ border: 1px solid var(--sage);
 
   #inicio .hero-copy .hero-title {
     max-width: 100%;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.6rem;
     font-size: clamp(1.8rem, 6vw, 2.3rem);
     text-align: center;
   }
 
+  /* Presentación personal: Centrada pero justificada sin espacios raros */
   #inicio .hero-copy .hero-intro {
-    margin-bottom: 1.5rem;
-    text-align: center;
+    margin-bottom: 1.4rem;
+    width: 100%;
+    max-width: 330px; /* Ancho de caja ideal para celular */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #inicio .hero-copy .hero-intro p {
+    text-align: justify;
+    text-align-last: left; /* Evita que la última línea se estire feo */
+    hyphens: auto;
+    font-size: 0.94rem;
+    line-height: 1.6;
   }
 
   #inicio .hero-copy .hero-intro h2::after {
@@ -3186,20 +3190,24 @@ border: 1px solid var(--sage);
     margin-right: auto;
   }
 
-  #inicio .hero-copy .hero-intro p {
-    text-align: center;
-  }
-
+  /* Párrafo principal de propuesta: Justificado prolijo dentro de una caja centrada */
   #inicio .hero-copy .lead-strong {
-    text-align: center;
-    margin-bottom: 1.8rem;
+    max-width: 320px; /* Caja acotada para que la lectura sea cómoda */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    text-align-last: left; /* Clave para que no queden espacios excesivos */
+    hyphens: auto;
+    font-size: 0.94rem;
+    line-height: 1.65;
+    margin-bottom: 1.6rem;
   }
 
   #inicio .hero-copy .hero-actions {
     justify-content: center;
   }
 
-  #inicio .video-box {
-    width: min(100%, 280px);
+  #video-box {
+    width: min(100%, 270px);
   }
 }
